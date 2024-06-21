@@ -1,0 +1,2 @@
+# gosm
+generational os manager
