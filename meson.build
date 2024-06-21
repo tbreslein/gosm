@@ -1,0 +1,5 @@
+project('gosm', 'c')
+lua_proj = subproject('lua')
+lua_dep = lua_proj.get_variable('lua_dep')
+subdir('lib')
+executable('gosm', 'main.c', link_with: [libgosm], dependencies: [lua_dep])
